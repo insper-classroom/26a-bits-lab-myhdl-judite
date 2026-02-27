@@ -15,10 +15,10 @@ def exe1(q, a, b):
     """
     q = a or !b
     """
-
+    
     @always_comb
     def comb():
-        pass
+        q.next = a or (not b)
 
     return instances()
 
